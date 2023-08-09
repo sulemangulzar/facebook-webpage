@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-Webpage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200">
+    <nav class="bg-blue-600 h-16 w-full flex items-center justify-between">
+        <div class="px-4 py-4 flex items-center">
+            <img class="h-8 w-8 cursor-pointer mx-2 " src="svgs/logo-facebook.svg" alt="logo">
+            <div class="relative flex items-center justify-between">
+                <input class="h-8 w-[600px] rounded-xl mx-4 p-2 text-xl font-semibold text-gray-500 border-white"
+                    type="search" name="search" id="search" placeholder="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="absolute w-6 h-6 right-6 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <div class="circle h-12 w-12 rounded-full bg-blue-800 px-2"></div>
+            <h1 class="text-white px-2 font-semibold">Name</h1>
+            <div class="h-12 w-px py-1 bg-black "></div>
+            <h1 class="text-white px-2 font-semibold">Home</h1>
+            <div class="h-12 w-px py-1 bg-black "></div>
+            <h1 class="text-white px-2 font-semibold">Find Friend</h1>
+            <svg class="h-12 w-12 cursor-pointer text-black px-2 " xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+            </svg>
+            <svg class="h-12 w-12 cursor-pointer text-black px-2 " xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+                <path
+                    d="M12.001 2C17.6345 2 22.001 6.1265 22.001 11.7C22.001 17.2735 17.6345 
+                    21.4 12.001 21.4C11.0233 21.4023 10.0497 21.273 9.10648 21.0155C8.92907 20.9668 8.7403
+                    20.9808 8.57198 21.055L6.58748 21.931C6.34398 22.0386 6.06291 22.018 5.83768 
+                    21.8761C5.61244 21.7342 5.47254 21.4896 5.46448 21.2235L5.40998 19.4445C5.40257 19.2257 5.30547 19.0196 5.14148 18.8745C3.19598 17.1345 2.00098 14.6155 2.00098 11.7C2.00098 6.1265 6.36748 2 12.001 2ZM5.99598 14.5365C5.71398 14.984 6.26398 15.488 6.68498 15.1685L9.84048 12.7735C10.0543 12.6122 10.3491 12.6122 10.563 12.7735L12.8995 14.5235C13.2346 14.7749 13.6596 14.8747 14.0716 14.7987C14.4836 14.7227 14.8451 14.4779 15.0685 14.1235L18.006 9.4635C18.288 9.016 17.738 8.512 17.317 8.8315L14.1615 11.2265C13.9476 11.3878 13.6528 11.3878 13.439 11.2265L11.1025 9.4765C10.7673 9.22511 10.3423 9.12532 9.93034 9.2013C9.51834 9.27728 9.15689 9.5221 8.93348 9.8765L5.99598 14.5365Z">
+                </path>
+            </svg>
+            <div class="circle h-6 w-6 rounded-full bg-black px-2"></div>
+            <div class="h-12 w-px py-1 bg-black mx-2"></div>
+            <svg class="h-12 w-12 cursor-pointer text-black px-2 " xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+            </svg>
+            <svg class="h-12 w-12 cursor-pointer text-black px-2 " xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+                <path
+                    d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z">
+                </path>
+            </svg>
+
+        </div>
+    </nav>
+    <div class="px-12 ">
+        <div class="flex items-center mt-6">
+            <div class="circle h-12 w-12 rounded-full bg-blue-800"></div>
+            <h1 class="text-white text-xl font-bold px-6">Name Surename</h1>
+        </div>
+        <div class="h-8 w-60 bg-white rounded-xl mt-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <svg class="h-8 w-8 cursor-pointer  px-1 " xmlns="http://www.w3.org/2000/svg" fill="lightblue"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                </svg>
+                <h1 class="py-1 font-semibold px-1">News Feed</h1>
+            </div>
+            <div class="px-2 flex items-center gap-2">
+                <div class="circle h-2 w-2 rounded-full bg-gray-500"></div>
+                <div class="circle h-2 w-2 rounded-full bg-gray-500"></div>
+                <div class="circle h-2 w-2 rounded-full bg-gray-500"></div>
+            </div>
+        </div>
+        <div class="flex items-center mt-4">
+            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue">
+                <path
+                    d="M12.001 2C17.6345 2 22.001 6.1265 22.001 11.7C22.001 17.2735 17.6345 
+                    21.4 12.001 21.4C11.0233 21.4023 10.0497 21.273 9.10648 21.0155C8.92907 20.9668 8.7403
+                    20.9808 8.57198 21.055L6.58748 21.931C6.34398 22.0386 6.06291 22.018 5.83768 
+                    21.8761C5.61244 21.7342 5.47254 21.4896 5.46448 21.2235L5.40998 19.4445C5.40257 19.2257 5.30547 19.0196 5.14148 18.8745C3.19598 17.1345 2.00098 14.6155 2.00098 11.7C2.00098 6.1265 6.36748 2 12.001 2ZM5.99598 14.5365C5.71398 14.984 6.26398 15.488 6.68498 15.1685L9.84048 12.7735C10.0543 12.6122 10.3491 12.6122 10.563 12.7735L12.8995 14.5235C13.2346 14.7749 13.6596 14.8747 14.0716 14.7987C14.4836 14.7227 14.8451 14.4779 15.0685 14.1235L18.006 9.4635C18.288 9.016 17.738 8.512 17.317 8.8315L14.1615 11.2265C13.9476 11.3878 13.6528 11.3878 13.439 11.2265L11.1025 9.4765C10.7673 9.22511 10.3423 9.12532 9.93034 9.2013C9.51834 9.27728 9.15689 9.5221 8.93348 9.8765L5.99598 14.5365Z">
+                </path>
+            </svg>
+            <h1 class="text-gray-500  text-xl px-2 font-semibold tracking-wide">Messengar</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="orange">
+                <path d="M21 13V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V13H2V11L3 6H21L22 11V13H21ZM5 
+                13V19H19V13H5ZM4.03961 11H19.9604L19.3604 8H4.63961L4.03961 11ZM6 14H14V17H6V14ZM3 3H21V5H3V3Z"></path>
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Marketplace</h1>
+        </div>
+        <div class="flex items-center mt-16">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
+        </div>
+        <div class="flex items-center mt-16">
+            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="orange">
+                <path d="M17 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 
+                21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9V3H15V1H17V3ZM4 9V19H20V9H4ZM6 13H11V17H6V13Z"></path>
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Events</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="green">
+                <path
+                    d="M20 22H4C3.44772 22 3 21.5523 3 21V8H21V21C21 21.5523 20.5523 22 20 22ZM21 6H3V3C3 
+                2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V6ZM7 11V15H11V11H7ZM7 17V19H17V17H7ZM13 12V14H17V12H13Z">
+                </path>
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Pages</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-8 h-8 bg-blue-400 rounded-full p-1">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Groups</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="skyblue" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-8 h-8 bg-white p-1">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Friends</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">On This Day</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="skyblue" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-8 h-8 bg-white p-1">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Find Friends</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="skyblue" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Photos</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg class="h-8 w-8 cursor-pointer text-orange-400 fill-current" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+                <path
+                    d="M17 4C20.3137 4 23 6.68629 23 10V14C23 17.3137 20.3137 20 17 20H7C3.68629 20 1 17.3137 1 14V10C1 6.68629 3.68629 4 7 4H17ZM10 9H8V11H6V13H7.999L8 15H10L9.999 13H12V11H10V9ZM18 13H16V15H18V13ZM16 9H14V11H16V9Z">
+                </path>
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Games</h1>
+        </div>
+        <div class="flex items-center mt-2">
+            <svg class="h-8 w-8 cursor-pointer text-blue-400 fill-current" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="green">
+                <path
+                    d="M20 22H4C3.44772 22 3 21.5523 3 21V8H21V21C21 21.5523 20.5523 22 20 22ZM21 6H3V3C3 
+                2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V6ZM7 11V15H11V11H7ZM7 17V19H17V17H7ZM13 12V14H17V12H13Z">
+                </path>
+            </svg>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Pages Feeds</h1>
+        </div>
+        <div class="flex items-center">
+            <svg class="h-12 w-12 cursor-pointer text-gray-400 fill-current px-2 " xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+                <path
+                    d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z">
+                </path>
+            </svg>
+            <h1 class="text-blue-500 text-md font-semibold px-2 tracking-wide">See More...</h1>
+        </div>
+        <div>
+            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Create</h1>
+            <span class="flex items-center mt-1">
+                <h1 class="text-blue-400 text-xl px-2  tracking-wide">Add</h1>
+                <h1 class="text-blue-400 text-xl px-2  tracking-wide">Pages</h1>
+                <h1 class="text-blue-400 text-xl px-2  tracking-wide">Group</h1>
+                <h1 class="text-blue-400 text-xl px-2  tracking-wide">event</h1>
+            </span>
+        </div>
+</body>
+
+</html>
