@@ -8,12 +8,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="max-w-screen-xl bg-gray-200">
+<body class="max-w-screen-xl mx-auto bg-gray-200">
     <nav class="bg-blue-600 h-16 w-full flex items-center justify-between">
         <div class="px-4 py-4 flex items-center">
             <img class="h-8 w-8 cursor-pointer mx-2 " src="svgs/logo-facebook.svg" alt="logo">
             <div class="relative flex items-center justify-between">
-                <input class="h-8 w-[600px] rounded-xl mx-4 p-2 text-xl font-semibold text-gray-500 border-white"
+                <input
+                    class="h-8 w-[600px] rounded-l-xl  rounded-r-md  mx-4 p-2 text-xl font-semibold text-gray-500 border-white"
                     type="search" name="search" id="search" placeholder="Search">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="absolute w-6 h-6 right-6 cursor-pointer">
@@ -59,187 +60,465 @@
 
         </div>
     </nav>
-    <div class="px-12 ">
-        <div class="flex items-center mt-6">
-            <div class="circle h-12 w-12 rounded-full bg-blue-800"></div>
-            <h1 class="text-white text-xl font-bold px-6">Name Surename</h1>
-        </div>
-        <div class="h-8 w-60 bg-white rounded-xl mt-4 flex items-center justify-between">
-            <div class="flex items-center">
-                <svg class="h-8 w-8 cursor-pointer  px-1 " xmlns="http://www.w3.org/2000/svg" fill="lightblue"
-                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
-                </svg>
-                <h1 class="py-1 font-semibold px-1">News Feed</h1>
+    <div class="mx-3 flex items-center">
+        <!-- first box -->
+        <div class=" h-screen 2xl-h-auto w-1/5">
+            <div class="flex items-center mt-2">
+                <div class="circle h-12 w-12 rounded-full bg-blue-800"></div>
+                <h1 class="text-gray-600 text-xl font-bold px-6">Name Surename</h1>
             </div>
-            <div class="px-2 flex items-center gap-2">
-                <div class="circle h-2 w-2 rounded-full bg-gray-500"></div>
-                <div class="circle h-2 w-2 rounded-full bg-gray-500"></div>
-                <div class="circle h-2 w-2 rounded-full bg-gray-500"></div>
+            <div class="h-8 w-60 bg-white rounded-xl mt-4 flex items-center justify-between">
+                <div class="flex items-center">
+                    <svg class="h-8 w-8 cursor-pointer  px-1 " xmlns="http://www.w3.org/2000/svg" fill="lightblue"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                    </svg>
+                    <h1 class="py-1 font-semibold px-1">News Feed</h1>
+                </div>
+                <div class="px-2 flex items-center gap-2">
+                    <div class="circle h-2 w-2 rounded-full bg-gray-500"></div>
+                    <div class="circle h-2 w-2 rounded-full bg-gray-500"></div>
+                    <div class="circle h-2 w-2 rounded-full bg-gray-500"></div>
+                </div>
             </div>
-        </div>
-        <div class="flex items-center mt-4">
-            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue">
-                <path
-                    d="M12.001 2C17.6345 2 22.001 6.1265 22.001 11.7C22.001 17.2735 17.6345 
+            <div class="flex items-center mt-4">
+                <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="blue">
+                    <path
+                        d="M12.001 2C17.6345 2 22.001 6.1265 22.001 11.7C22.001 17.2735 17.6345 
                     21.4 12.001 21.4C11.0233 21.4023 10.0497 21.273 9.10648 21.0155C8.92907 20.9668 8.7403
                     20.9808 8.57198 21.055L6.58748 21.931C6.34398 22.0386 6.06291 22.018 5.83768 
                     21.8761C5.61244 21.7342 5.47254 21.4896 5.46448 21.2235L5.40998 19.4445C5.40257 19.2257 5.30547 19.0196 5.14148 18.8745C3.19598 17.1345 2.00098 14.6155 2.00098 11.7C2.00098 6.1265 6.36748 2 12.001 2ZM5.99598 14.5365C5.71398 14.984 6.26398 15.488 6.68498 15.1685L9.84048 12.7735C10.0543 12.6122 10.3491 12.6122 10.563 12.7735L12.8995 14.5235C13.2346 14.7749 13.6596 14.8747 14.0716 14.7987C14.4836 14.7227 14.8451 14.4779 15.0685 14.1235L18.006 9.4635C18.288 9.016 17.738 8.512 17.317 8.8315L14.1615 11.2265C13.9476 11.3878 13.6528 11.3878 13.439 11.2265L11.1025 9.4765C10.7673 9.22511 10.3423 9.12532 9.93034 9.2013C9.51834 9.27728 9.15689 9.5221 8.93348 9.8765L5.99598 14.5365Z">
-                </path>
-            </svg>
-            <h1 class="text-gray-500  text-xl px-2 font-semibold tracking-wide">Messengar</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="orange">
-                <path d="M21 13V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V13H2V11L3 6H21L22 11V13H21ZM5 
+                    </path>
+                </svg>
+                <h1 class="text-gray-500  text-xl px-2 font-semibold tracking-wide">Messengar</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="orange">
+                    <path d="M21 13V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V13H2V11L3 6H21L22 11V13H21ZM5 
                 13V19H19V13H5ZM4.03961 11H19.9604L19.3604 8H4.63961L4.03961 11ZM6 14H14V17H6V14ZM3 3H21V5H3V3Z"></path>
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Marketplace</h1>
-        </div>
-        <div class="flex items-center mt-16">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
-        </div>
-        <div class="flex items-center mt-16">
-            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="orange">
-                <path d="M17 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Marketplace</h1>
+            </div>
+            <div class="flex items-center mt-16">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-12 h-12 bg-blue-400 rounded-full p-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Lorem ipsum</h1>
+            </div>
+            <div class="flex items-center mt-16">
+                <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="orange">
+                    <path d="M17 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 
                 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9V3H15V1H17V3ZM4 9V19H20V9H4ZM6 13H11V17H6V13Z"></path>
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Events</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="green">
-                <path
-                    d="M20 22H4C3.44772 22 3 21.5523 3 21V8H21V21C21 21.5523 20.5523 22 20 22ZM21 6H3V3C3 
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Events</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="green">
+                    <path
+                        d="M20 22H4C3.44772 22 3 21.5523 3 21V8H21V21C21 21.5523 20.5523 22 20 22ZM21 6H3V3C3 
                 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V6ZM7 11V15H11V11H7ZM7 17V19H17V17H7ZM13 12V14H17V12H13Z">
-                </path>
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Pages</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-8 h-8 bg-blue-400 rounded-full p-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Groups</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="skyblue" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-8 h-8 bg-white p-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Friends</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+                    </path>
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Pages</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8 bg-blue-400 rounded-full p-1">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Groups</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="skyblue" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8 bg-white p-1">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Friends</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
 
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">On This Day</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="skyblue" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-8 h-8 bg-white p-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Find Friends</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="skyblue" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-            </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">On This Day</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="skyblue" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8 bg-white p-1">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Find Friends</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="skyblue"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
 
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Photos</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg class="h-8 w-8 cursor-pointer text-orange-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24">
-                <path
-                    d="M17 4C20.3137 4 23 6.68629 23 10V14C23 17.3137 20.3137 20 17 20H7C3.68629 20 1 17.3137 1 14V10C1 6.68629 3.68629 4 7 4H17ZM10 9H8V11H6V13H7.999L8 15H10L9.999 13H12V11H10V9ZM18 13H16V15H18V13ZM16 9H14V11H16V9Z">
-                </path>
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Games</h1>
-        </div>
-        <div class="flex items-center mt-2">
-            <svg class="h-8 w-8 cursor-pointer text-blue-400 fill-current" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24" fill="green">
-                <path
-                    d="M20 22H4C3.44772 22 3 21.5523 3 21V8H21V21C21 21.5523 20.5523 22 20 22ZM21 6H3V3C3 
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Photos</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg class="h-8 w-8 cursor-pointer text-orange-400 fill-current" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M17 4C20.3137 4 23 6.68629 23 10V14C23 17.3137 20.3137 20 17 20H7C3.68629 20 1 17.3137 1 14V10C1 6.68629 3.68629 4 7 4H17ZM10 9H8V11H6V13H7.999L8 15H10L9.999 13H12V11H10V9ZM18 13H16V15H18V13ZM16 9H14V11H16V9Z">
+                    </path>
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Games</h1>
+            </div>
+            <div class="flex items-center mt-2">
+                <svg class="h-8 w-8 cursor-pointer text-blue-400 fill-current" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="green">
+                    <path
+                        d="M20 22H4C3.44772 22 3 21.5523 3 21V8H21V21C21 21.5523 20.5523 22 20 22ZM21 6H3V3C3 
                 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V6ZM7 11V15H11V11H7ZM7 17V19H17V17H7ZM13 12V14H17V12H13Z">
-                </path>
-            </svg>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Pages Feeds</h1>
+                    </path>
+                </svg>
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Pages Feeds</h1>
+            </div>
+            <div class="flex items-center">
+                <svg class="h-12 w-12 cursor-pointer text-gray-400 fill-current px-2 "
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z">
+                    </path>
+                </svg>
+                <h1 class="text-blue-500 text-md font-semibold px-2 tracking-wide">See More...</h1>
+            </div>
+            <div class="mt-2">
+                <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Create</h1>
+                <span class="flex items-center mt-1">
+                    <h1 class="text-blue-400 text-md px-2  tracking-wide">Add</h1>
+                    <h1 class="text-blue-400 text-md px-2  tracking-wide">Pages</h1>
+                    <h1 class="text-blue-400 text-md px-2  tracking-wide">Group</h1>
+                    <h1 class="text-blue-400 text-md px-2  tracking-wide">event</h1>
+                </span>
+            </div>
         </div>
-        <div class="flex items-center">
-            <svg class="h-12 w-12 cursor-pointer text-gray-400 fill-current px-2 " xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24">
-                <path
-                    d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z">
-                </path>
-            </svg>
-            <h1 class="text-blue-500 text-md font-semibold px-2 tracking-wide">See More...</h1>
+        <!-- mid box -->
+        <div class="flex-grow h-screen mx-4">
+            <!--mid box div 2-->
+            <div class=" h-64 bg-white mt-4 shadow-md rounded-xl ">
+                <div class="h-16 bg-gray-100 rounded-t-xl py-4 px-4 flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                    <p class="text-lg font-semibold tracking-wide">Make post</p>
+                    <div class="h-8 w-px bg-gray-300 mx-4"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg>
+                    <p class="text-lg font-semibold text-blue-400 tracking-wide">&ensp;Photo/Video album</p>
+                    <div class="h-8 w-px bg-gray-300 mx-4"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round"
+                            d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+                    </svg>
+                    <p class="text-lg font-semibold text-blue-400 tracking-wide">&ensp;Live Video</p>
+                </div>
+                <div class="flex items-center my-12">
+                    <div class="circle h-12 w-12 rounded-full bg-blue-900 mx-4"></div>
+                    <p class="text-lg font-semibold text-gray-400  tracking-wide">&ensp;Whats on your mind, Name
+                        Surname?</p>
+                </div>
+                <hr class=" bg-gray-200 mx-4">
+                <div class="flex items-center px-4">
+                    <div class="h-8 w-52 bg-gray-200 rounded-2xl my-2 py-1 px-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg>
+                        <p class="text-lg font-semibold text-gray-400 tracking-wide">&ensp;Photo / Video</p>
+                    </div>
+                    <div class="h-8 w-52 bg-gray-200 rounded-2xl my-2 py-1 px-3 flex items-center mx-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="yellow" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>
+
+                        <p class="text-lg font-semibold text-gray-400 tracking-wide">&ensp;Feeling/Activity</p>
+                    </div>
+                    <div class="h-8 w-20 bg-gray-200 rounded-2xl my-2 py-1 px-3 flex items-center mx-4">
+                        <div class="px-2 flex items-center gap-2">
+                            <div class="circle h-2 w-2 rounded-full bg-gray-500"></div>
+                            <div class="circle h-2 w-2 rounded-full bg-gray-500"></div>
+                            <div class="circle h-2 w-2 rounded-full bg-gray-500"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--mid box  div 2-->
+            <div class="h-[820px]  mt-4 bg-white rounded-t-xl shadow-md px-4 py-2">
+                <div class="flex items-center mt-2">
+                    <div class="circle h-12 w-12 rounded-full bg-blue-800"></div>
+                    <h1 class="text-gray-900 text-xl font-semibold px-6">Name Surename <span
+                            class="text-gray-300 text-md">
+                            &ensp;lorem ipsum <br> <span class="text-[16px] font-normal text-gray-400"> Yesterday at
+                                12
+                                :12
+                                pm</span></span></h1>
+                </div>
+                <p class="text-md text-gray-500 px-2 py-3">Lorem ipsum</p>
+                <div class="h-4/5 bg-blue-800"></div>
+                <div class="flex items-center my-4 ml-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                    </svg>
+                    <p class="text-lg font-semibold text-gray-400 tracking-wide">&ensp;like</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 mx-44">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                    </svg>
+
+                </div>
+            </div>
         </div>
-        <div>
-            <h1 class="text-gray-500 text-xl px-2 font-semibold tracking-wide">Create</h1>
-            <span class="flex items-center mt-1">
-                <h1 class="text-blue-400 text-xl px-2  tracking-wide">Add</h1>
-                <h1 class="text-blue-400 text-xl px-2  tracking-wide">Pages</h1>
-                <h1 class="text-blue-400 text-xl px-2  tracking-wide">Group</h1>
-                <h1 class="text-blue-400 text-xl px-2  tracking-wide">event</h1>
-            </span>
+        <!-- third box -->
+        <div class="h-screen w-[390px] mr-8 ">
+            <!--third box  div 2-->
+            <div class="h-80 bg-white mt-4 rounded-xl shadow-md px-4">
+                <div class="flex items-center justify-between py-2">
+                    <p class="text-md text-gray-900 font-semibold">Stories</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
+                </div>
+                <div class="flex items-center mt-6">
+                    <div class="circle h-12 w-12 rounded-full bg-blue-800 outline outline-offset-2 outline-blue-500">
+                    </div>
+                    <h1 class="text-gray-900 text-md font-semibold px-4">Name Surename
+                        &ensp; <br> <span class="text-[16px] font-normal text-gray-500">13 hours ago
+                        </span></h1>
+                </div>
+                <div class="flex items-center mt-6">
+                    <div class="circle h-12 w-12 rounded-full bg-blue-800 outline outline-offset-2 outline-blue-500">
+                    </div>
+                    <h1 class="text-gray-900 text-md font-semibold px-4">Name Surename
+                        &ensp; <br> <span class="text-[16px] font-normal text-gray-500">6 hours ago
+                        </span></h1>
+                </div>
+                <div class="flex items-center mt-6">
+                    <div class="circle h-12 w-12 rounded-full bg-blue-800 outline outline-offset-2 outline-blue-500">
+                    </div>
+                    <h1 class="text-gray-900 text-md font-semibold px-4">Name Surename
+                        &ensp; <br> <span class="text-[16px] font-normal text-gray-500">1 hours ago
+                        </span></h1>
+                </div>
+                <div class="flex items-center mt-6">
+                    <svg class="h-6 w-6 px-2 text-blue-500 fill-current " xmlns="http://www.w3.org/2000/svg"
+                        height="1em" viewBox="0 0 320 512">
+                        <path
+                            d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                    </svg>
+                    <p class="text-blue-500 text-sm ">See more</p>
+                </div>
+            </div>
+            <!--third box  div 2-->
+            <div class="h-[760px] w-[390px] bg-white mt-4 rounded-xl shadow-md px-4">
+                <div class="flex items-center justify-between py-2">
+                    <p class="text-md text-gray-900 font-semibold">Stories</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                    </svg>
+                </div>
+                <hr class="bg-gray-200 mt-2 h-[2px]">
+                <div class="flex items-center mt-6 mx-2">
+                    <div class="h-24 w-20 bg-blue-600">
+                    </div>
+                    <div class="px-4">
+                        <h1 class="text-gray-500 text-xl font-semibold ">Site Name</h1>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                <path
+                                    d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                            </svg>
+                            <p class="text-gray-500 px-1">Messages</p>
+                        </div>
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+                            </svg>
+                            <p class="text-gray-500 px-1">Notifification</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="w-full h-[2px] bg-gray-200 mt-6">
+                <div class="flex items-center gap-12 px-8  my-4">
+                    <div class="">
+                        <svg class=" h-8 w-8" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <path
+                                d="M288 109.3V352c0 17.7-14.3 32-32 32s-32-14.3-32-32V109.3l-73.4 73.4c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l128-128c12.5-12.5 32.8-12.5 45.3 0l128 128c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L288 109.3zM64 352H192c0 35.3 28.7 64 64 64s64-28.7 64-64H448c35.3 0 64 28.7 64 64v32c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V416c0-35.3 28.7-64 64-64zM432 456a24 24 0 1 0 0-48 24 24 0 1 0 0 48z" />
+                        </svg>
+                        <p class="text-sm text-gray-500 pt-2">Publish</p>
+                    </div>
+                    <div>
+                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <path
+                                d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                        </svg>
+                        <p class="text-sm text-gray-500 pt-2 ">Photo</p>
+                    </div>
+                    <div>
+                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+                            <path
+                                d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z" />
+                        </svg>
+                        <p class="text-sm text-gray-500 pt-2 ">Live</p>
+                    </div>
+                    <div>
+                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
+                            <path
+                                d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                        </svg>
+                        <p class="text-sm text-gray-500 pt-2 ">Invite</p>
+                    </div>
+
+                </div>
+                <hr class="w-full h-[2px] bg-gray-200 mt-4">
+                <div class="mt-6 flex items-center">
+                    <button
+                        class="px-[38px] py-3 text-xl bg-gray-200 border-[1px] border-gray-200 rounded-l-xl active:bg-white">Likes</button>
+                    <button
+                        class="px-8  py-3 text-xl bg-white border-[1px]  border-gray-200 active:bg-gray-200 ">Views</button>
+                    <button
+                        class="px-[38px] py-3 text-xl bg-white border-[1px]  border-gray-200 rounded-r-xl active:bg-gray-200">Post</button>
+                </div>
+                <p class="text-gray-500 text-3xl text-center font-bold mt-4">350</p>
+                <p class="text-gray-500 text-xl text-center mt-2 font-medium">150 likes this week</p>
+                <hr class="w-full h-[2px] bg-gray-200 mt-4">
+                <p class="text-gray-400 text-xl  font-semibold my-2 ml-2">Recent Posts</p>
+                <div class="flex items-center ">
+                    <div class="h-44 w-80 border-2 border-gray-200 px-2">
+                        <div class="flex items-center mx-2 my-2">
+                            <div class="h-20 w-20 bg-blue-600"></div>
+                            <span class="px-2">
+                                <h1 class="text-gray-500 text-xl font-semibold ">Work</h1>
+                                <p class="text-gray-500 px-1 font-semibold">Lorem Ipsum</p>
+                            </span>
+                        </div>
+                        <hr class="w-full h-[2px] bg-gray-200 mt-4 ">
+                        <div class="pt-3 flex items-center justify-between">
+                            <div>
+                                <ul class="flex items-center -space-x-2">
+                                    <li><svg class="h-6 w-6 text-blue-500 fill-current "
+                                            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                            <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z" />
+                                        </svg></li>
+                                    <li>
+                                        <svg class="h-6 w-6 text-red-500 fill-current "
+                                            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
+                                            <path
+                                                d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm114.6 226.4l-113 152.7-112.7-152.7c-8.7-11.9-19.1-50.4 13.6-72 28.1-18.1 54.6-4.2 68.5 11.9 15.9 17.9 46.6 16.9 61.7 0 13.9-16.1 40.4-30 68.1-11.9 32.9 21.6 22.6 60 13.8 72z" />
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg class="h-6 w-6 text-yellow-500 fill-current"
+                                            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+                                            <path
+                                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                        </svg>
+                                    </li>
+                                    <li class="text-black font-semibold px-4">77</li>
+                                </ul>
+                            </div>
+                            <button class=" px-2 py-2 bg-blue-500 rounded-xl text-white font-semibold text-md">Boost
+                                Posts</button>
+                        </div>
+                    </div>
+                    <div class="h-12 w-12 ml-2 bg-gray-200 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-8 h-8  mx-auto my-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex items-center my-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                    </svg>
+                    <p class="text-gray-400 text-xl  font-semibold mx-2"></p>Create Promotions</p>
+                    <div class="h-8 w-8 rounded-r-xl mx-4 bg-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 mx-auto my-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+
+                </div>
+                <hr class="w-full h-[2px] bg-gray-200 mt-2">
+            </div>
         </div>
+
 </body>
 
 </html>
